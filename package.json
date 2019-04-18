@@ -4,7 +4,8 @@
   "description": "shangcheng",
   "main": "index.js",
   "scripts": {
-    "test": "shengcheng"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,4 +25,3 @@
     "express": "^4.16.4"
   }
 }
-
