@@ -1,9 +1,3 @@
-#设置编码
-SET NAMES UTF8;
-#创建数据库
-DROP DATABASE IF EXISTS z;
-CREATE DATABASE z CHARSET=UTF8;
-USE z;
 #创建数据表 储存首页数据
 CREATE TABLE z_home_page(
 zid SMALLINT PRIMARY KEY AUTO_INCREMENT, #商品编号 SMALLINT 小整型范围-32768~32768 PRIMARY KEY 主键约束从小到大 AUTO_INCREMENT 自动增长
@@ -49,19 +43,13 @@ INSERT INTO z_home_page VALUES
 (NULL,"王俊凯 戴尔DELL游侠G3",7499,"image/ChMkJlsiF-KICAtpAAEVj7cfWEcAApCPANnA4QAARWn470.jpg"),
 (NULL,"王俊凯 戴尔DELL游侠G3",9999,"image/ChMkJlsiHdGICadAAAECBNUPQlcAApCRQK_ihYAAQIc632.jpg"),
 (NULL,"王俊凯 戴尔DELL游侠G3",8999,"image/ChMkJlsiF-KICAtpAAEVj7cfWEcAApCPANnA4QAARWn470.jpg");
--- 用户表
 CREATE TABLE z_login(
     id INT PRIMARY KEY AUTO_INCREMENT,
     uname VARCHAR(25),
-   upwd VARCHAR(32)
+    upwd VARCHAR(32)
 );
-INSERT INTO xz_login VALUES
-(null,"1343825062",md5("123456")),
-(null,"15737273235",md5("123456")),
-(null,"15736780172",md5("123456")),
-(null,"13438250",md5("123456")),
-(null,"1343825",md5("123456"));
--- 详情页
+INSERT INTO z_login VALUES
+(null,"1343825062","md5(123456)");
 CREATE TABLE z_details(
     id INT PRIMARY KEY AUTO_INCREMENT, 
     title VARCHAR(128), /*标题*/
