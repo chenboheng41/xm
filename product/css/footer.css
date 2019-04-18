@@ -1,0 +1,40 @@
+.footer{
+    /*footer属性*/
+    width: 1200px;
+    margin: 65px auto 0;
+}
+.footer>.footer-ziuh{
+    /*最后一个ul没有右外边距*/
+    margin-right:0;
+}
+.footer>ul{
+    /*所有ul的属性*/
+    float: left;
+    font-size: 12px;
+    margin: 0 105px 0 0;
+    color:#666;
+}
+
+.footer ul>li:first-child{
+    /* footer 下面的ul 的第一个子元素li*/
+    font-weight: bold;
+}
+.footer ul>li{
+    margin:10px 0 ;
+}
+footer{
+    border: 1px solid transparent;
+    color:#fff;
+    height: 150px;
+    background: #2d2d2d;
+    text-align: center;
+}
+footer div{
+    margin: 20px 0;
+}
+.footer-shang span{
+    margin: 0 90px;
+}
+.footer-dibu{
+    margin: 0;
+}

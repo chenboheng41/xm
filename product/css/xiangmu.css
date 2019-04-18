@@ -1,0 +1,820 @@
+/*通用样式*/
+body{
+    background-color:#f7f7f7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+/*轮播*/
+#lunbotu{
+    margin-top: -5px;
+}
+/*内容区最外层section样式*/
+#main{
+    width:1200px;
+    margin: 0 auto;
+}
+/* 商城顶部搜索框 鼠标下拉到一定距离显示在页面的最顶部
+ */
+ /* 固定定位在在页面最上边 */
+ #fixed-nav{
+     width: 100%;
+     height: 60px;
+     background: #fff;
+     position: fixed;
+     top: 0;
+     z-index:999;
+     display: none;
+     border-bottom:2px solid #f00;
+ }
+ /* 居中 */
+ .fixed-nav{
+     width: 1200px;
+     height:60px;
+     margin:0 auto; 
+ }
+ /* 固定搜索框logo图标的位置 和商城的字体颜色 */
+ .fixed-nav-option{
+    position: absolute;
+    top:5px;
+    left: 420px;
+    font-size:26px;
+    color: #c00;
+ }
+ /* 固定搜索框logo的大小 */
+.fixed-nav-option>img{
+    width: 65px;
+}
+/* 固定搜索框中跳转选项 位置大小,字体颜色,鼠标悬浮效果 */
+.fixed-skip{
+    float: right;
+}
+.fixed-skip>li{
+    float: left;
+    margin: 17px 50px 0 0;
+    
+}
+.fixed-skip>li>a{
+    color:#000;
+}
+.fixed-skip>li>a:hover{
+    color:#f00;
+}
+/* 顶部导航栏搜索框 */
+/* 这是搜索框定位 */
+.fixed-nav-input{
+    position:absolute;
+    top:15px;
+    left:700px;
+ }
+ .fixed-nav-input>input{
+     border:0;
+     width:400px;
+     height:30px;
+     background: #eee;
+     padding:0 10px;
+ }
+ .fixed-nav-input>button{
+    height:31px;
+    width:60px;
+    box-sizing: border-box;
+    background: #f00;
+    border: 1px solid #f00;
+    color: #fff;
+    border-radius:8%;
+ }
+
+/*轻松省 团购*/
+/*轻松购外层div*/
+#main_tuangou,.tuan{
+    width: 1200px;
+    margin-top: 30px;
+}
+#main_tuangou{
+    /*相对定位用来给img定位置*/
+    position: relative;
+}
+.tuan{
+    border-top: 3px solid #f00;
+}
+/*轻松省  图片定位*/
+.qingsong>img{
+    position: absolute;
+    top: -23px;
+    left: -19px;
+}
+/*tuan_neirong 内容*/
+.tuan_neirong{
+    margin:0 0 0 162px;
+    width: 687px;
+    height: 562px;
+    float:left;
+}
+.item{
+    /*所有的li的样式 左浮动 大小 背景颜色 边距*/
+    float: left;
+    width: 227px;
+    height: 280px;
+    background:#fff;
+    margin: 1px 1px 1px 1px;
+    box-sizing: border-box;
+}
+.item a{
+    /*把a标签变成块级居中 字体颜色*/
+    text-align: center;
+    display: block;
+    color: #000000;
+}
+.tuan_neirong_1{
+    /*相对定位*/
+    position: relative;
+}
+/*鼠标悬浮遮罩层*/
+.tuan_neirong_1_zhe{
+    /*绝对定位*/
+    width:100%;
+    height:54px;
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+    top: 125px;
+    left: 0;
+    display: none;
+    transition:0.5s;
+    font-size: 14px;
+}
+.tuan_neirong_1_zhe a,.tuan_neirong_1_zhe span{
+    /*因为给li的所有a加了块级 所以浮动成同一行 加上边距 字体颜色*/
+    margin: 0  0 0 3px;
+    float: left;
+    color: #fff;
+}
+.tuan_neirong_1_zhe p{
+    margin: 3px 0 0 35px;
+    color: #fff;
+}
+/*鼠标悬浮*/
+
+/*图片*/
+.tuan_neirong_1 img{
+    /*图片大小*/
+    width: 180px;
+}
+.tuan_neirong_1_bottom{
+    /*li的下半部分上边距 内边距*/
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.tuan_neirong_1_bottom p{
+    /*li下半部分 字体大小 内边距 字体颜色*/
+    font-size: 22px;
+    margin: 0;
+    color: #f00;
+}
+/*到店团*/
+.tuan_daodian{
+    /*右浮动 宽高 背景颜色*/
+    float: right;
+    width: 351px;
+    height: 562px;
+    background: #fff;
+    box-sizing: border-box;
+}
+.tuan_daodian li{
+    /*每个li的大小*/
+    width: 100%;
+    height: 185px;
+}
+.tuan_daodian_img img{
+    width: 140px;
+}
+.tuan_daodian_img{
+    float: left;
+}
+.tuan_daodian_right{
+    /*右边内容 浮动*/
+    float:left;
+}
+.tuan_daodian_img{
+    margin: 18px 0 0 0;
+}
+.tuan_daodian_right{
+    margin: 28px 0 0 0;
+}
+.tuan_daodian_right a{
+    /*a标记字体颜色*/
+    color:#000;
+}
+.tuan_daodian_right p{
+    /*p标记字体颜色*/
+    color:#f00;
+}
+.tuan_daodian_right_bg{
+    /*线下保障样式*/
+    background: #f5c6cb;
+    border-radius: 25%;
+    text-align: center;
+    margin: 3px;
+}
+.tuan_daodian_right span{
+    display:block;
+    width:133px;
+    height: 35px;
+    background:#fd446b;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5%;
+}
+.fudong{
+    clear: both;
+    width: 1200px;
+}
+/*同城购部分*/
+#main_tongcheng{
+    /*设置大小 居中*/
+    width: 1200px;
+    margin: 30px auto;
+    border: 1px solid transparent;
+}
+/*同城购标题*/
+.main_tongcheng_header{
+    width: 1200px;
+    height: 50px;
+}
+.main_tongcheng_header h3,.main_tongcheng_header span{
+   float: left;
+}
+.main_tongcheng_header span{
+    margin: 10px 0 0 10px;
+    color: #c6c8ca;
+}
+    /*第一部分*/
+.tongcheng_one{
+    /*设置宽度*/
+    width: 1200px;
+}
+.tongcheng_one::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.tongcheng_one div:nth-child(1),.tongcheng_one div:nth-child(2),.tongcheng_one div:nth-child(3){
+    /*浮动同一行显示 大小*/
+    float: left;
+    box-sizing: border-box;
+    width: 400px;
+}
+/*第二部分*/
+.tongcheng_two{
+    /*设置宽度整体宽度和*/
+    width: 1200px;
+    background: #ffffff;
+    margin-top: -16px;
+}
+.tongcheng_two li{
+    /*调整每一个li大小*/
+    float:left;
+    width: 240px;
+    padding: 20px 20px 24px ;
+}
+.tongcheng_two-img img{
+    /*调整图片大小*/
+    width: 200px;
+}
+.tongcheng_two-bottom a{
+    /*调整字体的样式*/
+    color:#000;
+}
+.tongcheng_two-bottom a:hover{
+    /*鼠标悬浮a链接的颜色*/
+    color: #ff0000;
+}
+.two-bottom_jieshao{
+    /*调整字体的样式*/
+    color: #c6c8ca;
+    margin-bottom:1px ;
+}
+.two-bottom_jiage{
+    /*调整字体的样式*/
+    font-size: 20px;
+    color: #ff0000;
+    display: inline;
+}
+.tongcheng_two-bottom span{
+    /*调整字体的样式*/
+    color: #F00;
+    font-size: 12px;
+}
+.two-bottom_a a{
+    /*按钮样式 大小*/
+    border:1px solid #f00;
+    color: #f00;
+    font-size: 12px;
+    padding:3px 6px;
+}
+/*品牌精选*/
+#pinpai{
+    width:1200px;
+}
+#pinpai>h3{
+    display: inline;
+}
+.pinpai-top{
+    color: #c6c8ca;
+    margin: 10px 0 0 10px;
+}
+
+#pinpai li{
+    /*所有li的样式*/
+    float: left;
+    width: 230px;
+    height: 340px;
+    margin-top: 10px;
+}
+.pinpai-neirong{
+    /*内容li的样式*/
+    background: #ffffff;
+    padding: 20px;
+    margin:  0 0 0 11px;
+    text-align: center;
+    /*鼠标悬浮边框阴影过程0.5s*/
+    transition: 0.5s;
+}
+.pinpai-neirong:hover{
+    /*鼠标悬浮 边框阴影效果*/
+    box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+}
+.pinpai-neirong:hover .pinpai-img img{
+    /*鼠标悬浮 图片乘1.1倍效果*/
+    transform: scale(1.1,1.1);
+
+}
+.pinpai-img img{
+    /*图片大小*/
+    width: 200px;
+    margin-bottom: 30px;
+    /*鼠标悬浮边框阴影过程.5s*/
+    transition: 0.5s;
+}
+.pinpai-red{
+    color:#f00;
+}
+/*电子竞技*/
+#dianzi{
+    /**/
+    width: 1200px;
+    margin-top: 30px;
+}
+.dianzi-remen{
+    /*左边大小*/
+    width: 49.5%;
+    float:left;
+}
+/*左边上半部*/
+.dianzi-top{
+    /*左边上半部分大小*/
+    background: #7095ee;
+    height:50px;
+    border-top: 1px solid transparent;
+}
+.dianzi-top>p{
+    /*热门  样式*/
+    color:#fff;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 8px 0 0 22px;
+    display: inline-block;
+}
+.dianzi-top a{
+    color: #fff;
+}
+.dianzi-top ul{
+    float: right;
+}
+.dianzi-top li{
+    color: #fff;
+    float: left;
+    margin: 10px 8px 0 0;
+    cursor: pointer;
+}
+#span1,#span2,#span3{
+    display:none;
+    width: 64px;
+    height:3px;
+    background: #ffffff;
+    margin: 0 -64px -10px 0;
+}
+#span1{
+    display: inline-block;
+}
+#span3{
+    width: 49px;
+    margin: 0 -47px -10px 0;
+}
+    /*点击切换效果*/
+.yincang{
+    /*轮播的相对定位*/
+    position: relative;
+}
+#diazi-bottom-lunbo1,#diazi-bottom-lunbo2,#diazi-bottom-lunbo3{
+    /*定位轮播图位置*/
+    color:#fff;
+    position: absolute;
+    top:0;
+}
+/*左边下半部*/
+.dianzi-bottom-img{
+    background: #fff;
+    width: 198px;
+    height: 260px;
+    border: 1px solid transparent;
+    padding: 0 19px;
+    float:left;
+    margin: 259px 0 0;
+}
+.dianzi-bottom-img img{
+    /*图片样式*/
+    width:160px;
+    padding: 15px 0;
+}
+.dianzi-bottom-img p{
+    margin: 0 0 0 5px;
+    color: #FF0000;
+    font-size: 20px;
+}
+.dianzi-bottom-img h6 a{
+    color:#000;
+}
+.dianzi-bottom-img h6 a:hover{
+    color:#f00;
+}
+/*电子竞技 右边*/
+.dianzi-dianjing{
+    width: 49.5%;
+    float:right;
+}
+.dianjing-top{
+    background: #9b74e9;;
+    height:50px;
+    border-top: 1px solid transparent;
+}
+.dianjing-top>p{
+    color:#fff;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 8px 0 0 22px;
+    display: inline-block;
+}
+/*电竞内容*/
+.dianjing-img{
+    background: #fff;
+    width: 198px;
+    height: 260px;
+    border: 1px solid transparent;
+    padding: 0 19px;
+    float:left;
+}
+.dianjing-img img{
+    /*图片样式*/
+    width:160px;
+    padding: 15px 0;
+}
+.dianjing-img p{
+    margin: 0 0 0 5px;
+    color: #FF0000;
+    font-size: 20px;
+}
+.dianjing-img h6 a{
+    color:#000;
+}
+.dianjing-img h6 a:hover{
+    color:#f00;
+}
+/*家电精选*/
+#jiadian{
+    /*这是家电精选最外面的div 和上一个内容保持30px'边距*/
+    width: 1200px;
+    height: 600px;
+    margin-top: 30px;
+}
+.jiadian-left{
+    /*给div设置宽*/
+    width:594px;
+    float: left;
+}
+.jiadian-bottom>ul>li{
+    /*li并列*/
+    float: left;
+}
+.jiadian-bottom{
+    /*给下面的li的div设置一个宽让他们可以分成两行排列*/
+    width: 594px;
+}
+.jiadian-bottom>ul li{
+    padding: 14px;
+    background:#fff;
+}
+.jiadian-bottom>ul{
+    margin: 0 0 0 1px;
+}
+/*家电精选 右边内容*/
+.jiadian-right{
+    width: 594px;
+    float: right;
+    position: relative;
+}
+.jiadian-daohang{
+    /*家电精选上边导航大小背景*/
+    cursor: pointer;
+    margin-top: -15px;
+    width: 594px;
+    height: 50px;
+    background:rgb(231, 140, 148);
+}
+.jiadian-daohang>ul{
+    margin-left:260px; 
+}
+.jiadian-daohang>ul li{
+    /*导航中每个li的样式 左浮 字体大小 字体颜色 边距*/
+    float: left;
+    font-size:18px;
+    color: #fff;
+    margin: 10px 15px 0 0; 
+}
+/*彩电样式*/
+#caidian>ul li img{
+    /*内容图片样式*/
+    width: 160px;
+    margin-bottom:15px; 
+}
+#caidian>ul li{
+    /*内容li的样式 内边距 背景颜色 大小 浮动*/
+    float: left;
+    width: 198px;
+    height: 260px;
+    padding:0 19px;
+    background:#fff;
+}
+#caidian>ul{
+    margin-top:-13px; 
+}
+/*这个是彩电 冰箱 洗衣机 厨卫 小家电 其中的通用属性 主要写了字体样式 大小 颜色*/
+.tongyong-li-bottom a{
+    color:#000;
+}
+.tongyong-li-bottom a:hover{
+    color:#f00;
+}
+.tongyong-li-bottom span{
+    color:#f00;
+    font-size: 20px;
+}
+/*冰箱样式*/
+#bingxiang>ul li img{
+    /*内容图片样式*/
+    width: 160px;
+    margin-bottom:15px; 
+}
+#bingxiang>ul li{
+    /*内容li的样式 内边距 背景颜色 大小 浮动*/
+    float: left;
+    width: 198px;
+    height: 260px;
+    padding:0 19px;
+    background:#fff;
+}
+#bingxiang>ul{
+    margin-top:-13px; 
+}
+/*洗衣机样式*/
+#xiyiji>ul li img{
+    /*内容图片样式*/
+    width: 160px;
+    margin-bottom:15px; 
+}
+#xiyiji>ul li{
+    /*内容li的样式 内边距 背景颜色 大小 浮动*/
+    float: left;
+    width: 198px;
+    height: 260px;
+    padding:0 19px;
+    background:#fff;
+}
+#xiyiji>ul{
+    margin-top:-13px; 
+}
+/*厨卫样式*/
+#chuwei>ul li img{
+    /*内容图片样式*/
+    width: 160px;
+    margin-bottom:15px; 
+}
+#chuwei>ul li{
+    /*内容li的样式 内边距 背景颜色 大小 浮动*/
+    float: left;
+    width: 198px;
+    height: 260px;
+    padding:0 19px;
+    background:#fff;
+}
+#chuwei>ul{
+    margin-top:-13px; 
+}
+/*小家电样式*/
+#xiaojiadian>ul li img{
+    /*内容图片样式*/
+    width: 160px;
+    margin-bottom:15px; 
+}
+#xiaojiadian>ul li{
+    /*内容li的样式 内边距 背景颜色 大小 浮动*/
+    float: left;
+    width: 198px;
+    height: 260px;
+    padding:0 19px;
+    background:#fff;
+}
+#xiaojiadian>ul{
+    margin-top:-13px; 
+}
+#caidian,#bingxiang,#xiyiji,#chuwei,#xiaojiadian{
+    position: absolute;
+    top:66px;
+}
+/*footer*/
+.footer{
+    /*footer属性*/
+    width: 1200px;
+    margin: 65px auto 0;
+}
+.footer>.footer-ziuh{
+    /*最后一个ul没有右外边距*/
+    margin-right:0;
+}
+.footer>ul{
+    /*所有ul的属性*/
+    float: left;
+    font-size: 12px;
+    margin: 0 105px 0 0;
+    color:#666;
+}
+
+.footer ul>li:first-child{
+    /* footer 下面的ul 的第一个子元素li*/
+    font-weight: bold;
+}
+.footer ul>li{
+    margin:10px 0 ;
+}
+footer{
+    border: 1px solid transparent;
+    color:#fff;
+    height: 150px;
+    background: #2d2d2d;
+    text-align: center;
+}
+footer div{
+    margin: 20px 0;
+}
+.footer-shang span{
+    margin: 0 90px;
+}
+.footer-dibu{
+    margin: 0;
+}
+/* 页面最右边的标签 */
+#label{
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0px;
+    background:#383838;
+    width:30px;
+    height:100%;
+}
+.tag{
+    background-image:url(../image/toolbars.png)
+}
+
+#label>div:first-child{
+    position: absolute;
+    top: 35%;
+    width: 30px;
+}/* 第一个标签 */
+.label-reg>i{ 
+    background-position: -88px -175px;
+    width: 30px;
+    height:35px;  
+    display: inline-block;
+    margin:10px 0;
+}
+/* 第二个标签 */
+.label-scar>i:first-child{
+    background-position: -51px -3px;
+    width: 30px;
+    height:30px;  
+    display: inline-block;
+    border-top: 1px solid #666;
+}
+.label-scar>i:nth-child(2){
+    width: 30px;
+    height:80px;  
+    display: inline-block;
+    color:#fff;
+    padding:0 0 0 5px;
+    margin-top:-10px;
+    border-bottom: 1px solid #666;
+}
+/* 第三个标签 */
+.label-record>i:first-child{
+    background-position: -51px -102px;
+    width: 30px;
+    height:30px;  
+    display: inline-block;
+    margin:15px 0;   
+}
+/* 登录框 */
+/* 登录框定位 */
+#login-box{
+    width:400px;
+    height:450px;
+    background: #fff;
+    z-index: 1000;
+    position: fixed;
+    left: 40%;
+    top:20%;
+    box-shadow: black -5px 4px 4px -3px;
+}
+/* 尚未登录 */
+#login-box>div:first-child{
+    background: #e9e9e9;
+    height: 35px;
+}
+#login-box>div:first-child>p:first-child{
+    padding: 7px 0 0 10px;
+}
+#login-box>div:first-child>p:first-child>a:first-child{
+    float: right;
+    padding: 0 10px 0 0;
+    color: #000;
+}
+/* 商城提醒 */
+#login-box>div:nth-child(2)>p:first-child{
+    font-size: 15px;
+    padding: 15px 0 0 20px;
+    background: #e9e9e9;
+    color: #888;
+    height: 50px;
+    width: 90%;
+    margin: 10px 0 0 15px;
+}
+#login-box .ewm{
+    float: left;
+    margin: 10px 59px 0 80px;
+}
+.account{
+    margin: 10px 0 0 0 ;
+}
+.ID,.pwd{
+    width:300px;
+    height:40px;
+    margin: 10px 0 0 50px;
+}
+/* 登录按钮 */
+.button_login{
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background: #e4393c;
+    margin:40px 0 0 50px;
+    padding: 0 0 0 130px;
+    font-size: 20px;
+}
+/* 立即注册 */
+.enroll{
+    float:right;
+    color: #c00;
+    margin: 50px 50px 0 0 
+}
+.alert{
+    width:200px;
+    background: #ffebeb;
+    margin: 5px 0 0 75px;
+    padding:3px 10px 3px 25px;
+    color:#f0000e;
+    font-size:13px;
+    display: none;
+}
+.jingshitu{
+    background: url(../image/pwd-icons-new.png);
+}
+.alert-img{
+    background-position: 18px 125px;
+    width: 20px;
+    height:16px;
+    display: inline-block;
+}

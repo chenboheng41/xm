@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/Z_header.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+       <h1>登录商城</h1>
+       <p><a href="javascript:;" class="enroll">立即注册</a></p> 
+    </div>
+        <div id="container">
+
+            <div class="tu">
+                <img src="image/ad2_1.jpg" alt="">
+            </div>
+            <div id="login-box">
+                <div>
+                    <p>您尚未登录
+                        <a href="javascript:;"></a>
+                    </p>
+                </div>
+                <div>
+                    <p>商城不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                    <h5 class="ewm">扫码登录</h5>
+                    <h5 class="account">账户登录</h5>
+                </div>
+                <div style="display:none">
+                    <img src="" alt="">
+                </div>
+                <div class="alert">
+                    <p>
+                        
+                    </p> 
+                </div>
+                <div>
+                    <form action="/user/login" method="get">
+                        <input type="text" placeholder="用户名/已验证手机号" class="ID" name="uname"> <br>
+                        <input type="password" placeholder="密码" class="pwd" name="upwd">
+                        <a href="javascript:;" class="button_login">登录</a> <br>
+                    </form> 
+                </div>
+            </div> 
+            <div id="login-reg">
+                <div class="header">注册</div>
+                <input type="text" placeholder="用户名"><br>
+                <input type="text" placeholder="手机号"><br>
+                <input type="password"  placeholder="密码"><br>
+                <input type="email"  placeholder="邮箱"><br> 
+                <a href="javascript:;" class="button_reg">注册</a> <br>  
+            </div>  
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            })
+        </script>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

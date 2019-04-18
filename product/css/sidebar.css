@@ -1,0 +1,50 @@
+#label{
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0px;
+    background:#383838;
+    width:30px;
+    height:100%;
+}
+.tag{
+    background-image:url(../image/toolbars.png)
+}
+
+#label>div:first-child{
+    position: absolute;
+    top: 35%;
+    width: 30px;
+}/* 第一个标签 */
+.label-reg>i{ 
+    background-position: -88px -175px;
+    width: 30px;
+    height:35px;  
+    display: inline-block;
+    margin:10px 0;
+}
+/* 第二个标签 */
+.label-scar>i:first-child{
+    background-position: -51px -3px;
+    width: 30px;
+    height:30px;  
+    display: inline-block;
+    border-top: 1px solid #666;
+}
+.label-scar>i:nth-child(2){
+    width: 30px;
+    height:80px;  
+    display: inline-block;
+    color:#fff;
+    padding:0 0 0 5px;
+    margin-top:-10px;
+    border-bottom: 1px solid #666;
+}
+/* 第三个标签 */
+.label-record>i:first-child{
+    background-position: -51px -102px;
+    width: 30px;
+    height:30px;  
+    display: inline-block;
+    margin:15px 0;   
+}
